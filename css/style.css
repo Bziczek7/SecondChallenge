@@ -28,6 +28,11 @@ nav ul {
   text-align: center;
 } */
 
+nav{
+
+  margin-bottom: 3em;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -129,14 +134,28 @@ footer span::after{
   content: "❤️";
 }
 
+.hero-banner{
+  display: none;
+}
+
 @media only screen and (max-width: 70em) {
   
   body{
     background-color: red;
   }
+
+  nav{
+    display: none;
+  }
+
 }
 
 @media only screen and (max-width: 50em) {
   body{
     background-color: blue;
   }
+
+  nav{
+    display: none;
+  }
+}
