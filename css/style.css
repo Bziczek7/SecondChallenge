@@ -21,11 +21,72 @@ h6 {
 p {
   margin: 0;
 }
+
+/* Grid---- */
 .container{
   display: grid;
   grid-template-columns: 1fr 3fr;
 }
 
+.about-grid{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* grid-template-rows: 100px 100px; */
+  grid-template-areas: 
+  "abt abo";
+}
+
+.work-grid{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: 
+  "wop wot";
+
+}
+.contact-grid{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: 
+  "cot cop";
+
+}
+
+
+
+/* pictures */
+#about-picture{
+  grid-area: abo;
+  background-image: url("../images/02-hero-bg.jpg");
+
+}
+#about-text{
+  grid-area: abt;
+
+}
+
+#about-text p::after{
+  content: "whatever";
+}
+
+#contact-picture{
+  grid-area: cop;
+  background-image: url("../images/02-hero-bg.jpg");
+
+}
+
+#contact-text{
+  grid-area: cot;
+} 
+
+#work-text{
+
+  grid-area: wot;
+}
+
+#work-picture{
+  grid-area: wop;
+  background-image: url("../images/02-hero-bg.jpg");
+}
 
 footer{
   text-align: center;
