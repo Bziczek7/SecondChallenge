@@ -21,17 +21,49 @@ h6 {
 p {
   margin: 0;
 }
+/* 
+nav ul {
+  list-style-type: none;
+  display: inline;
+  text-align: center;
+} */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
 
 /* Grid---- */
 .container{
   display: grid;
   grid-template-columns: 1fr 3fr;
+
 }
 
 .about-grid{
   display: grid;
+  gap: 10px;
   grid-template-columns: 1fr 2fr;
-  /* grid-template-rows: 100px 100px; */
+  grid-template-rows: 500px;
   grid-template-areas: 
   "abt abo";
 }
@@ -39,6 +71,7 @@ p {
 .work-grid{
   display: grid;
   grid-template-columns: 1fr 2fr;
+  grid-template-rows: 500px;
   grid-template-areas: 
   "wop wot";
 
@@ -46,6 +79,7 @@ p {
 .contact-grid{
   display: grid;
   grid-template-columns: 1fr 2fr;
+  grid-template-rows: 500px;
   grid-template-areas: 
   "cot cop";
 
@@ -56,7 +90,7 @@ p {
 /* pictures */
 #about-picture{
   grid-area: abo;
-  background-image: url("../images/02-hero-bg.jpg");
+  background-image: url("../images/02-portfolio-1.jpg");
 
 }
 #about-text{
@@ -70,7 +104,7 @@ p {
 
 #contact-picture{
   grid-area: cop;
-  background-image: url("../images/02-hero-bg.jpg");
+  background-image: url("../images/02-portfolio-2.jpg");
 
 }
 
@@ -85,7 +119,7 @@ p {
 
 #work-picture{
   grid-area: wop;
-  background-image: url("../images/02-hero-bg.jpg");
+  background-image: url("../images/02-portfolio-3.jpg");
 }
 
 footer{
@@ -94,3 +128,15 @@ footer{
 footer span::after{
   content: "❤️";
 }
+
+@media only screen and (max-width: 70em) {
+  
+  body{
+    background-color: red;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  body{
+    background-color: blue;
+  }
