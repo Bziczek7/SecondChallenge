@@ -112,7 +112,7 @@ li a:hover {
 #contact-picture{
   grid-area: cop;
   background-image: url("../images/02-portfolio-2.jpg");
-  transition: transform .2s;
+
 
 }
 
@@ -128,7 +128,7 @@ li a:hover {
 #work-picture{
   grid-area: wop;
   background-image: url("../images/02-portfolio-3.jpg");
-  transition: transform .2s;
+
 }
 
 .zoom{
