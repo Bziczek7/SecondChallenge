@@ -146,7 +146,32 @@ footer span::after{
   }
 
   nav{
-    display: none;
+    /* display: none; */
+  }
+  .about-grid{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 300px;
+    grid-template-areas: 
+    "abt abo";
+  }
+  
+  .work-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 300px;
+    grid-template-areas: 
+    "wop wot";
+  
+  }
+  .contact-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 300px;
+    grid-template-areas: 
+    "cot cop";
+  
   }
 
 }
@@ -157,6 +182,34 @@ footer span::after{
   }
 
   nav{
-    display: none;
+    /* display: none; */
+  }
+  .about-grid{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "abt "
+    "abo";
+  }
+  
+  .work-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "wop"
+    "wot";
+  
+  }
+  .contact-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "cot"
+    "cop";
+  
   }
 }
